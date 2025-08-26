@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="google_advanced_search.css">
+    </head>
+    <body>
+        <nav>
+            <img src="google_home.png" alt="Google" height="40px">
+            <div>
+                <a href="index.html">Home</a>
+                <a href="googleImageSearch.html">Image Search</a>
+            </div>
+        </nav>
+
+        <div class="advancedSearch">
+            <h3>Advanced Search</h1>
+                <hr style="margin: 15px; opacity: 20%;">
+            <form action="https://google.com/search">
+                <p id="form-group-title">Find pages with... </p>
+                <div class="form-group">
+                    <div id="allWords">
+                        <label for="allWords">all these words : </label>
+                        <input type="text" id="allWords" name="as_q" class="input" autocomplete="off">
+                    </div>
+
+                    <div id="exactWord">
+                        <label for="exactWord">this exact word or phrase : </label>
+                        <input type="text" id="exactWord" name="as_epq" class="input" autocomplete="off">
+                    </div>
+
+                    <div id="anyWords">
+                        <label for="anyWords">any of these words : </label>
+                        <input type="text" id="anyWords" name="as_oq" class="input" autocomplete="off">
+                    </div>
+
+                    <div id="noneWords">
+                        <label for="noneWords">none of these words : </label>
+                        <input type="text" id="noneWords" name="as_eq" class="input" autocomplete="off">
+                    </div>
+                </div>
+                <div id="searchBtn">
+                    <input type="submit" value="Advanced Search">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
